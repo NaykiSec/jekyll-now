@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Simple Js deobfuscation"
+title:  "Simple Js deobfuscation 1"
 date:   2017-08-28 12:00:00 +0700
 categories: Javascript deobfuscation
 ---
 
-# Simple JS deobfuscation
+A first example of javascript deofuscation for IOC extraction.
 
 ## First hand on javascript deobfuscation
 For this excercice we will use a really simple real javascript that was used on mass phishing campaign to drop payload into the target's computer.

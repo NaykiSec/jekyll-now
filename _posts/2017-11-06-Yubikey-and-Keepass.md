@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Yubikey Usage Draft"
+title:  "Yubikey and Keepass usage"
 date:   2017-11-06 00:20:21 +0700
 categories: Security Authentication
 ---
-# Usage of a Yubikey 4 usb stick
+How to use a Yubikey 4 with Keepass.
 
 I just bought a Yubikey 4 to have strong Authentication with a token.
 
@@ -38,25 +38,20 @@ Here is the plugin that we need :
 
 You can check if the plugin install worked properly by looking here:
 (Tools - > Plugins)
-[Picture of Keepass2 plugin page]
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
-![Image of Yaktocat1](images/Yubikey_keepass_plugin.png)
-![Image of Yaktocat2](./images/Yubikey_keepass_plugin.png)
-![Image of Yaktocat3](images/Yubikey/Yubikey_keepass_plugin.png)
-![Image of Yaktocat4](./images/Yubikey/Yubikey_keepass_plugin.png)
-![othertest](https://naykisec.github.io/images/Yubikeykeepassplugin.png)
-![screenshoot](https://github.com/rmsubekti/emping/raw/master/Screenshot.png)
+![Yubikey plugin verification](https://naykisec.github.io/images/yubikey/yubikeykeepassplugin.png)
+
 
 We also need a second tool from Yubico website it's called Yubikey Personalization Tool.
 It will allow us to generate a Challenge reponse code to put in Keepass 2.
 
-[Picture of Yubikey Personalization tool 1]
+![Yubikey Personalization Tool 1](https://naykisec.github.io/images/yubikey/yubikeypt1.png)
+
 
 Choose "Challenge Response".
 Then "HMAC-SHA1".
 
-[Picture of Yubikey Personalization tool 2]
+![Yubikey Personalization Tool 2](https://naykisec.github.io/images/yubikey/yubikeypt2.png)
 
 Choose "Configuration slot 2".
 
@@ -66,14 +61,14 @@ Generate the secret key , copy the input in the clipboard or somewhere else beca
 
 And click the "Write Configuration" button.
 
-[Picture of Yubikey Personalization tool 2]
+![Yubikey Personalization Tool 3](https://naykisec.github.io/images/yubikey/yubikeypt3.png)
 
 
 [OPTIONAL] You can also put a Master password for more security :)
 Create a new keepass database and check the "Show expert mode".
 Check Key file / provider and choose Yubikey challenge response.
 Click on "OK" and then paste the secret key.
-[Picture of Keepas2 database creation]
+![Keepass database creation](https://naykisec.github.io/images/yubikey/keepass2databasecreation.png)
 You will be asked to touch your yubikey to activate it.
 
 And then "Tada !".
@@ -84,4 +79,6 @@ Now close keepass and restart it to test the authentication.
 Open Keepass, enter your master password if you put one :)
 Be sure that "Key File" is set to "Yubikey challenge-response"
 
-[Picture of Keepass2 authentication]
+![Keepass database creation](https://naykisec.github.io/images/yubikey/keepass2authentication.png)
+
+You now have a pretty secure Keepass :)

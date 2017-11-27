@@ -4,7 +4,6 @@ title:  "USB Keyboard packet capture analysis"
 date:   2017-11-04 12:00:00 +0700
 categories: Forensic USBpcap
 ---
-
 I managed to solve a challenge during the HackIT CTF 2017.
 It was a forensic challenge for 100 points intitled Foren100
 
