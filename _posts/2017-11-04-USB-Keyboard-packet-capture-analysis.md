@@ -12,7 +12,7 @@ USB ducker
 foren100
 Description: This file was captured from one of the computers at the Internet cafe. We think that the hacker was using this computer at that time. Try to get his secret documents. ( flag format is flag{...} )
 You can download the pcap file here:
-[Pcap]: https://0xd13a.github.io/ctfs/hackit2017/foren100/task.pcap
+[Pcap](https://0xd13a.github.io/ctfs/hackit2017/foren100/task.pcap)
 
 
 We have a USB packet capture of a keyboard.
@@ -38,7 +38,7 @@ Leftover Capture Data: 02002f0000000000
 {% endhighlight %}
 
 If you look at the official USB keyboard keymap on page 53 you can see a table of correspondance between hexadecimal value and character.
-[USB.ORG]: http://www.usb.org/developers/hidpage/Hut1_12v2.pdf
+[USB.ORG](http://www.usb.org/developers/hidpage/Hut1_12v2.pdf)
 
 In our example below 02 mean SHIFT key and 2F mean character [ or {
 As SHIFT + KEY = CAPS -- Here it's the { character.
@@ -52,7 +52,7 @@ tshark -r task.pcap -T fields -e usb.capdata | grep -E "^.{23}$" | grep -v 00:00
 
 I've then coded a little script to automaticaly translate the value.
 As mine was not really great and that i made it a long time ago i will "stole" the write up of 0xd13a that made a great script for this :)
-[0xd13a blog]: https://0xd13a.github.io/ctfs/hackit2017/foren100/
+[0xd13a blog](https://0xd13a.github.io/ctfs/hackit2017/foren100/)
 
 {% highlight ruby %}
 

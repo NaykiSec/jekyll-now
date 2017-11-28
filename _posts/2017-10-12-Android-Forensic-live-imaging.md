@@ -5,10 +5,10 @@ date:   2017-10-12 00:20:21 +0700
 categories: Forensic Android
 ---
 This post is mainly inspired by this blog.
-[Source]: https://freeandroidforensics.blogspot.fr/2014/08/live-imaging-android-device.html
+[Source](https://freeandroidforensics.blogspot.fr/2014/08/live-imaging-android-device.html)
 
 Download and install adb from the android website
-[Android adb]: http://developer.android.com/tools/help/adb.html
+[Android adb](http://developer.android.com/tools/help/adb.html)
 Download Busybox.apk
 Download a root application to push on the android device. (Kingoroot)
 
@@ -85,7 +85,3 @@ nc 127.0.0.1 8888 > device_image.dd
 {% endhighlight %}
 
 At the end you will have the image of your android phone.
-
-[Naykisec GitHub repo]: [jekyll-gh].
-
-[jekyll-gh]:   https://github.com/NaykiSec
