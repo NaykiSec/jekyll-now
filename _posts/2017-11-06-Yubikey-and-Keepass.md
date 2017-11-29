@@ -60,10 +60,14 @@ And click the "Write Configuration" button.
 
 
 [OPTIONAL] You can also put a Master password for more security. :)
+
 Create a new keepass database and check the "Show expert mode".
 Check Key file / provider and choose Yubikey challenge response.
 Click on "OK" and then paste the secret key.
+
 ![Keepass database creation](https://naykisec.github.io/images/yubikey/keepass2databasecreation.png)
+
+
 You will be asked to touch your yubikey to activate it.
 
 And then "Tada !".
