@@ -16,7 +16,7 @@ From the official website :
 The Yubikey offers strong authentication with one touch or tap. Unlike two-factor authentication using SMS, the YubiKey does not require network connectivity or access to a mobile device. Just touch or tap the YubiKey to authenticate.
 
 It's a simple usb device that allow you to do strong physical authentication.
-![Yubikey 4](https://naykisec.github.io/images/yubikey/yubikey4.png)
+![Yubikey 4](https://naykisec.github.io/images/yubikey/yubikey4.png =200x200)
 
 Severals modes are available here i will only focus on the OTP (One Time Password) capabilities of the Yubikey.
 There is two OTP modes the "simple" one that i'm going to do and the other one following the OATH HOTP standard (RFC 4226) but it require another plugin : OtpKeyProv KeePass plugin.
