@@ -16,14 +16,12 @@ From the official website :
 The Yubikey offers strong authentication with one touch or tap. Unlike two-factor authentication using SMS, the YubiKey does not require network connectivity or access to a mobile device. Just touch or tap the YubiKey to authenticate.
 
 It's a simple usb device that allow you to do strong physical authentication.
+![Yubikey 4](https://naykisec.github.io/images/yubikey/yubiket4.png)
 
-Two modes :
-* Strong Password
-* One Time Password
-The latest YubiKeys support generating one-time passwords following the OATH HOTP standard (RFC 4226). If you want to protect your database using such one-time passwords, you need the OtpKeyProv KeePass plugin.
+Severals modes are available here i will only focus on the OTP (One Time Password) capabilities of the Yubikey.
+There is two OTP modes the "simple" one that i'm going to do and the other one following the OATH HOTP standard (RFC 4226) but it require another plugin : OtpKeyProv KeePass plugin.
 
 
-On my test i focused on the One Time password capabilities of the Yubikey.
 ## Keepass 2
 
 First of all Keepass 2.
