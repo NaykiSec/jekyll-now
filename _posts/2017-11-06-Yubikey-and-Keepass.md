@@ -40,7 +40,7 @@ You can check if the plugin install worked properly by looking here:
 
 
 We also need a second tool from Yubico website, it's called Yubikey Personalization Tool.
-It will allow us to generate a Challenge reponse code to put in Keepass 2.
+It will allow us to generate a Challenge response code to put in Keepass 2.
 
 ![Yubikey Personalization Tool 1](https://naykisec.github.io/images/yubikey/yubikeypt1.png)
 
