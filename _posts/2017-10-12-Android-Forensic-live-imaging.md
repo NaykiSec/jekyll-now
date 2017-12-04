@@ -4,33 +4,39 @@ title:  "Android Forensic live imaging"
 date:   2017-10-12 00:20:21 +0700
 categories: Forensic Android
 ---
+Here is a tutorial on how to do a android live forensic imaging.
+The tutorial is for linux and windows forensic workstation. You just need to download netcat for windows for the last part.
+
 This post is mainly inspired by this blog.
 [Source](https://freeandroidforensics.blogspot.fr/2014/08/live-imaging-android-device.html)
 
-Download and install adb from the android website
+Download and install adb from the android website.
 [Android adb](http://developer.android.com/tools/help/adb.html)
-Download Busybox.apk
-Download a root application to push on the android device. (Kingoroot)
+
+Download Busybox.apk .
+
+Download a root application to push on the android device. (Kingoroot).
+
 
 Start the android device and enable the debugging feature on it
 The way of achieving this might be different depending one the android version :
 I’m on android 5.0 so i need to go to Settings -> About Phone and hit the build version 7 time.
 Then go to debugger option menu and enable usb debugging
 
-Then run the adb.exe devices command.
+Then run the adb devices command.
 If you can see a devices we can start to set everything up. (be sure to accept the usb connection when you plug your phone to your computer)
 
 Then we need to root the device using an apk.
 Here i will try doing this with the Kingoroot application (might not be the best : )
 {% highlight ruby %}
-adb.exe -d install KingoRoot.apk
+adb -d install KingoRoot.apk
 {% endhighlight %}
 
 After the upload you will need to go to the app' and unlock it
 Be sure to untick the "install aditionnal apps" that are not necessary for aquiring root access.
 
 {% highlight ruby %}
-adb.exe -d install BusyBox.apk
+adb -d install BusyBox.apk
 {% endhighlight %}
 
 Now install Busybox.apk, you can find it on everything apk store.
@@ -39,7 +45,7 @@ This apk will install the basic linux command and especially netcat.
 To have a shell on your mobilephone you can now use adb.exe to “log into”
 
 {% highlight ruby %}
-adb.exe -d shell
+adb -d shell
 {% endhighlight %}
 
 You are now connected but if you look at some restricted area of the phone you can see that you are not root yet :
