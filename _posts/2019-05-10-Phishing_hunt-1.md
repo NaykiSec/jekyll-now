@@ -45,9 +45,13 @@ Let's analyze it quickly.
 
 There is a config file in the inc folder with potentialy interesting information :
 
-{% highlight shell %}
+
+```
+{
 <?php $trackpass="www.jembotmawot.com"; ?>
-{% endhighlight %}
+}
+```
+
 
 *trackpass* is used in the panel folder and is used as a password.
 
