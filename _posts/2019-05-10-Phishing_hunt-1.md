@@ -45,7 +45,7 @@ Let's analyze it quickly.
 
 There is a config file in the inc folder with potentialy interesting information :
 
-{% highlight php %}
+{% highlight shell %}
 <?php $trackpass="www.jembotmawot.com"; ?>
 {% endhighlight %}
 
