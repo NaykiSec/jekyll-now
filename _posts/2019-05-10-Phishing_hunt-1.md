@@ -51,6 +51,8 @@ There is a config file in the inc folder with potentialy interesting information
 
 *trackpass* is used in the panel folder and is used as a password.
 
+![Login to the panel](https://naykisec.github.io/images/Hunting_phishing/img_5.PNG)
+
 I did not test if this password was the one used on this phishing campaign or if it has been modified.
 
 
